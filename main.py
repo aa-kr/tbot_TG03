@@ -62,7 +62,7 @@ async def age(message: Message, state: FSMContext):
 
 
 @dp.message(Form.grade)
-async def city(message: Message, state: FSMContext):
+async def grade(message: Message, state: FSMContext):
     await state.update_data(grade =message.text)
 
     students_data = await state.get_data()
