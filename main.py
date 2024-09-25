@@ -76,7 +76,7 @@ async def grade(message: Message, state: FSMContext):
     conn.commit()
     conn.close()
 
-
+    await message.answer(f"Спасибо! Ты {students_data['name']}, {students_data['age']} лет, класс {students_data['grade']}. Данные сохранены.")
 
 
 async def main():
